@@ -1,13 +1,16 @@
-body {
+.layer1 {
     background-color: #1f2937;
     color:rgb(239, 239, 243);
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
 }
+
 
 ul {
     display: flex;
@@ -20,12 +23,31 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
 .modal {
     display: flex;
     flex-direction: column;
+    max-width: 150px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headline {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+img {
+    max-height: 150px;
+}
+
+button {
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
